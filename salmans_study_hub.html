@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102d4a">
+<title>Salman's Study Hub | Dakhil 2027</title>
+<style>
+:root{--bg:#f3f6fa;--panel:#fff;--text:#172b43;--muted:#64748b;--line:#e2e8f0;--navy:#102d4a;--blue:#24618e;--gold:#d9ad59;--soft:#eaf1f8;--green:#16804b;--red:#b42318;--shadow:0 8px 28px #102d4a0c}
+[data-theme=dark]{--bg:#0d1724;--panel:#152438;--text:#e7eef7;--muted:#a6b5c7;--line:#2b3d52;--navy:#091522;--blue:#79b9ed;--gold:#edc875;--soft:#20344b;--green:#4cbd83;--red:#ff8279;--shadow:0 8px 28px #0003}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans Bengali",Arial,sans-serif;transition:.2s}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:10px;padding:10px 14px;background:var(--blue);color:white;font-weight:650}button:hover{filter:brightness(1.07)}button.secondary{background:var(--soft);color:var(--text)}button.danger{background:var(--red);color:white}button.gold{background:var(--gold);color:#172b43}input,select,textarea{width:100%;padding:11px;border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--text);margin:5px 0 12px}textarea{min-height:80px;resize:vertical}label{font-size:13px;font-weight:650}.shell{max-width:1200px;margin:auto;display:grid;grid-template-columns:245px minmax(0,1fr);min-height:100vh}.sidebar{background:var(--navy);color:white;padding:18px 13px;position:sticky;top:0;height:100vh;overflow:auto}.brand{padding:8px 10px 18px;border-bottom:1px solid #ffffff22}.brand b{font-size:17px;display:block}.brand small{color:#c1d2e2}.nav{display:grid;gap:5px;margin-top:15px}.nav button{background:transparent;color:#d9e5f0;text-align:left;padding:11px;font-size:13px}.nav button.active,.nav button:hover{background:#ffffff1c;color:white}.main{min-width:0}.top{background:var(--panel);border-bottom:1px solid var(--line);padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;position:sticky;top:0;z-index:5}.top h2{font-size:17px;margin:0}.top small{color:var(--muted)}.content{padding:18px;max-width:1100px;margin:auto}.page{display:none}.page.active{display:block}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:16px;box-shadow:var(--shadow);margin-bottom:13px;min-width:0}.card h3{margin:0 0 12px;font-size:16px}.stat small,.muted{color:var(--muted);font-size:12px}.stat strong{display:block;font-size:23px;margin-top:5px}.hero{background:linear-gradient(125deg,#102d4a,#245b82);color:white;border-radius:18px;padding:22px;margin-bottom:14px}.hero .arabic{font-size:23px;color:#f3d58f;line-height:1.9}.hero h1{font-size:23px;margin:7px 0}.hero p{color:#d7e5f0;margin:5px 0}.pill{display:inline-block;padding:5px 9px;border-radius:30px;background:var(--soft);font-size:11px;color:var(--text)}.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.row>*{flex:1}.actions{display:flex;gap:7px;flex-wrap:wrap}.actions button{font-size:12px}.progress{height:9px;border-radius:20px;background:var(--soft);overflow:hidden}.progress i{display:block;height:100%;background:var(--green)}.item{padding:12px 0;border-bottom:1px solid var(--line)}.item:last-child{border:0}.item b{display:block;margin-bottom:4px}.item small{color:var(--muted)}.list{display:grid;gap:8px}.resource{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px;border:1px solid var(--line);border-radius:11px}.resource div{min-width:0}.resource b{display:block}.resource small{color:var(--muted)}.resource button{white-space:nowrap}.notice{border-left:4px solid var(--gold);background:var(--soft);padding:12px;border-radius:8px;margin:8px 0}.tablewrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:10px 8px;text-align:left;border-bottom:1px solid var(--line)}th{background:var(--soft)}.subjectrow{display:grid;grid-template-columns:1fr 95px;gap:8px;align-items:center;border-bottom:1px solid var(--line);padding:5px 0}.subjectrow input{margin:0}.hidden{display:none!important}.quote{background:var(--soft);padding:15px;border-radius:12px;line-height:1.9;margin:9px 0}.arabic{font-size:22px;line-height:2}.footer{text-align:center;color:var(--muted);font-size:12px;padding:20px}.hamb{display:none}.filelabel{display:inline-block;background:var(--soft);padding:10px 13px;border-radius:9px;cursor:pointer;font-size:12px}.thumb{max-width:100%;max-height:160px;object-fit:contain;border-radius:9px;margin-top:8px}.empty{padding:18px;text-align:center;color:var(--muted);font-size:13px}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.dangertext{color:var(--red)}
+@media(max-width:800px){.shell{display:block}.sidebar{position:fixed;z-index:10;left:-260px;width:245px;transition:.25s}.sidebar.open{left:0}.hamb{display:inline-block}.top{padding:12px}.content{padding:12px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:440px){.grid2,.two{grid-template-columns:1fr}.hero h1{font-size:20px}.stat strong{font-size:19px}}
+@media print{.sidebar,.top,.no-print,button{display:none!important}.shell{display:block}.content{padding:0}.page{display:none!important}#page-statement{display:block!important}.card{box-shadow:none;break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar" id="sidebar">
+ <div class="brand"><b>🎓 SALMAN'S STUDY HUB</b><small>DAKHIL 2027 • EDUCATION SYSTEM</small></div>
+ <nav class="nav" id="nav">
+  <button class="active" data-page="home">🏠 হোম ড্যাশবোর্ড</button>
+  <button data-page="routine">🗓️ ১৪ বিষয়ের রুটিন</button>
+  <button data-page="study">📚 পড়াশোনার হিসাব</button>
+  <button data-page="teacher">👨‍🏫 স্যার/হুজুরের পড়া</button>
+  <button data-page="notes">📝 নোট ও ছবির খাতা</button>
+  <button data-page="library">📖 ডিজিটাল লাইব্রেরি</button>
+  <button data-page="links">🔗 QR / ভিডিও / ওয়েব লিংক</button>
+  <button data-page="notice">📢 নোটিশ বোর্ড</button>
+  <button data-page="plans">🎯 প্ল্যান ও টু-ডু</button>
+  <button data-page="tools">🧮 ক্যালকুলেটর ও সূত্র</button>
+  <button data-page="statement">📊 স্টেটমেন্ট ও রিপোর্ট</button>
+  <button data-page="settings">⚙️ সেটিংস ও প্রোফাইল</button>
+ </nav>
+</aside>
+<div class="main">
+ <header class="top no-print">
+  <div class="row" style="flex:initial;gap:10px">
+   <button class="hamb secondary" id="hamb">☰</button>
+   <div><h2 id="pageTitle">হোম ড্যাশবোর্ড</h2><small id="todayText"></small></div>
+  </div>
+  <div class="row" style="flex:initial">
+   <button class="secondary" id="themeBtn" title="Theme">🌙</button>
+   <button class="secondary" id="langBtn">EN</button>
+  </div>
+ </header>
+ <main class="content">
+  <section class="page active" id="page-home">
+   <div class="hero">
+    <div class="arabic">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <h1 id="welcome">আসসালামু আলাইকুম, সালমান!</h1>
+    <p>জ্ঞান, শৃঙ্খলা ও সাফল্যের পথে — Dakhil Examination 2027</p>
+    <div class="row" style="margin-top:15px">
+     <div><span class="pill">📅 <span id="heroDate"></span></span></div>
+     <div><span class="pill">🕒 <span id="clock"></span></span></div>
+    </div>
+   </div>
+   <div class="card">
+    <h3>🤲 আজকের দোয়া, আয়াত ও হাদিস</h3>
+    <div class="quote"><div class="arabic">رَبِّ زِدْنِي عِلْمًا</div><b>অর্থ:</b> হে আমার রব! আমার জ্ঞান বৃদ্ধি করে দিন।<br><small>সূরা ত্ব-হা, ২০:১১৪</small></div>
+    <div class="quote"><div class="arabic">اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ</div><b>দরুদ:</b> হে আল্লাহ, মুহাম্মদ ﷺ ও তাঁর পরিবারের ওপর রহমত বর্ষণ করুন।</div>
+    <div class="quote"><div class="arabic">مَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ</div><b>অর্থ:</b> যে ব্যক্তি জ্ঞান অর্জনের পথে চলে, আল্লাহ তার জন্য জান্নাতের পথ সহজ করে দেন।<br><small>সহিহ মুসলিম, ২৬৯৯</small></div>
+   </div>
+   <div class="grid">
+    <div class="card stat"><small>আজ পড়াশোনা</small><strong id="homeStudy">০ মি.</strong></div>
+    <div class="card stat"><small>অন্য কাজে সময়</small><strong id="homeOther">০ মি.</strong></div>
+    <div class="card stat"><small>আজকের লক্ষ্য</small><strong id="homeGoal">৬ ঘণ্টা</strong></div>
+    <div class="card stat"><small>লক্ষ্য পূরণ</small><strong id="homePercent">০%</strong></div>
+   </div>
+   <div class="card"><h3>📢 গুরুত্বপূর্ণ নোটিশ</h3><div id="homeNotices" class="list"></div></div>
+   <div class="grid2">
+    <div class="card"><h3>📌 আজকের করণীয়</h3><div id="homeTasks"></div></div>
+    <div class="card"><h3>⏱️ দ্রুত পড়া যোগ</h3>
+     <label>বিষয়</label><select id="quickSubject"></select>
+     <label>মিনিট</label><input id="quickMinutes" type="number" min="1" value="30">
+     <label>কী পড়েছ?</label><input id="quickDetail" placeholder="যেমন: অনুবাদ / অনুশীলনী">
+     <button id="quickAdd">পড়ার হিসাব যোগ</button>
+    </div>
+   </div>
+  </section>
+
+  <section class="page" id="page-routine">
+   <div class="card"><h3>🗓️ ১৪ বিষয়ের রুটিন</h3><p class="muted">বিষয়ের নাম ও দৈনিক লক্ষ্য সম্পাদনা করো। তোমার মাদরাসার প্রকৃত সিলেবাস অনুযায়ী বিষয়গুলো ঠিক করে নেবে।</p><div id="subjectEditor"></div><button id="saveSubjects">বিষয় সংরক্ষণ</button></div>
+   <div class="card"><h3>⏰ সাপ্তাহিক সময়সূচি</h3><label>দিন</label><select id="routineDay"><option>প্রতিদিন</option><option>শনিবার</option><option>রবিবার</option><option>সোমবার</option><option>মঙ্গলবার</option><option>বুধবার</option><option>বৃহস্পতিবার</option><option>শুক্রবার</option></select><div class="two"><div><label>সময়</label><input id="routineTime" placeholder="সকাল ৬:০০–৭:০০"></div><div><label>বিষয়/কাজ</label><input id="routineSubject" placeholder="গণিত"></div></div><button id="addRoutine">রুটিনে যোগ করো</button><div id="routineList"></div></div>
+  </section>
+
+  <section class="page" id="page-study">
+   <div class="card"><h3>📚 পড়াশোনার সেশন রেকর্ড</h3><div class="two"><div><label>তারিখ</label><input type="date" id="studyDate"></div><div><label>বিষয়</label><select id="studySubject"></select></div></div><div class="two"><div><label>শুরু</label><input type="time" id="studyStart"></div><div><label>শেষ</label><input type="time" id="studyEnd"></div></div><label>কী পড়েছ?</label><textarea id="studyDetail" placeholder="অধ্যায়, পৃষ্ঠা, অনুশীলনী, অনুবাদ ইত্যাদি"></textarea><label>বোঝার অবস্থা</label><select id="studyLevel"><option>ভালোভাবে বুঝেছি</option><option>কিছুটা বুঝেছি</option><option>আবার পড়তে হবে</option></select><button id="addStudy">রেকর্ড সংরক্ষণ</button></div>
+   <div class="card"><h3>⏳ পড়ার সময়ের বাইরে কী করেছ?</h3><div class="two"><div><label>তারিখ</label><input type="date" id="otherDate"></div><div><label>কাজ</label><select id="otherType"><option>মোবাইল / সোশ্যাল মিডিয়া</option><option>কোডিং / ওয়েবসাইট</option><option>ঘুম / বিশ্রাম</option><option>পারিবারিক কাজ</option><option>নামাজ / ধর্মীয় কাজ</option><option>বাইরে যাওয়া</option><option>অসুস্থতা / ক্লান্তি</option><option>অন্যান্য</option></select></div></div><div class="two"><div><label>শুরু</label><input type="time" id="otherStart"></div><div><label>শেষ</label><input type="time" id="otherEnd"></div></div><label>কেন পড়া হয়নি / কী করেছ?</label><textarea id="otherDetail"></textarea><button id="addOther" class="secondary">সময় ব্যবহারের হিসাব রাখো</button></div>
+   <div class="card"><h3>আজকের পড়ার রেকর্ড</h3><div id="studyList"></div></div><div class="card"><h3>আজকের অন্য কাজের রেকর্ড</h3><div id="otherList"></div></div>
+  </section>
+
+  <section class="page" id="page-teacher">
+   <div class="card"><h3>👨‍🏫 স্যার / হুজুরের দেওয়া পড়া</h3><label>শিক্ষকের নাম</label><input id="teacherName" placeholder="যেমন: আরবি হুজুর / ইংরেজি স্যার"><div class="two"><div><label>বিষয়</label><select id="teacherSubject"></select></div><div><label>তারিখ</label><input type="date" id="teacherDate"></div></div><label>কী পড়া দিয়েছেন?</label><textarea id="teacherTask" placeholder="পৃষ্ঠা, প্রশ্ন, মুখস্থ, অনুবাদ ইত্যাদি"></textarea><div class="two"><div><label>জমা দেওয়ার তারিখ</label><input type="date" id="teacherDue"></div><div><label>অবস্থা</label><select id="teacherStatus"><option>বাকি</option><option>চলমান</option><option>সম্পন্ন</option></select></div></div><button id="addTeacher">পড়ার নির্দেশনা সংরক্ষণ</button></div>
+   <div class="card"><h3>📋 শিক্ষকদের দেওয়া সব পড়া</h3><div id="teacherList"></div></div>
+  </section>
+
+  <section class="page" id="page-notes">
+   <div class="card"><h3>📝 ব্যক্তিগত নোট</h3><label>নোটের শিরোনাম</label><input id="noteTitle" placeholder="নোটের নাম"><label>বিষয়</label><select id="noteSubject"></select><label>নোট লিখো</label><textarea id="noteBody" rows="5"></textarea><label class="filelabel">📷 বই/খাতার ছবি যোগ করো<input type="file" id="noteImage" accept="image/*" capture="environment" hidden></label><div id="imagePreview"></div><button id="addNote">নোট সংরক্ষণ</button></div>
+   <div class="card"><h3>📒 সংরক্ষিত নোট</h3><div id="noteList"></div></div>
+  </section>
+
+  <section class="page" id="page-library">
+   <div class="card"><h3>📖 ডিজিটাল লাইব্রেরি</h3><label>বইয়ের নাম</label><input id="bookName" placeholder="বইয়ের নাম"><div class="two"><div><label>লেখক</label><input id="bookAuthor" placeholder="লেখকের নাম"></div><div><label>বিষয়</label><select id="bookSubject"></select></div></div><label>Google Drive / PDF / বইয়ের লিংক</label><input id="bookUrl" type="url" placeholder="https://drive.google.com/..."><label>বিবরণ</label><textarea id="bookDesc"></textarea><button id="addBook">লাইব্রেরিতে যোগ করো</button><p class="muted">লিংক কার্ডের ভেতরে গোপন থাকবে; “বই খুলুন” চাপলে খুলবে। Drive ফাইলের অনুমতি ঠিক করে দেবে।</p></div>
+   <div class="card"><h3>📚 আমার বইসমূহ</h3><div id="bookList"></div></div>
+   <div class="card"><h3>🌐 ইংরেজি শিক্ষা ও অনলাইন রিসোর্স</h3><div class="list" id="starterResources"></div></div>
+  </section>
+
+  <section class="page" id="page-links">
+   <div class="card"><h3>🔗 QR কোড / ভিডিও / পরীক্ষা / ওয়েবসাইট</h3><label>রিসোর্সের নাম</label><input id="linkName" placeholder="যেমন: গণিত অধ্যায় ১ ভিডিও"><div class="two"><div><label>ধরন</label><select id="linkType"><option>QR কোড</option><option>ভিডিও</option><option>অনলাইন পরীক্ষা</option><option>ওয়েবসাইট</option><option>অন্যান্য</option></select></div><div><label>বিষয়</label><select id="linkSubject"></select></div></div><label>লিংক</label><input id="linkUrl" type="url" placeholder="https://..."><label>বিবরণ</label><input id="linkDesc" placeholder="কোন অধ্যায় বা কী কাজে লাগবে"><button id="addLink">রিসোর্স সংরক্ষণ</button></div>
+   <div class="card"><h3>🚀 আমার সংরক্ষিত রিসোর্স</h3><div id="linkList"></div></div>
+  </section>
+
+  <section class="page" id="page-notice">
+   <div class="card"><h3>📢 নোটিশ বোর্ড পরিচালনা</h3><label>নোটিশের শিরোনাম</label><input id="noticeTitle" placeholder="জরুরি নোটিশ"><label>নোটিশের বিবরণ</label><textarea id="noticeBody"></textarea><div class="two"><div><label>তারিখ</label><input type="date" id="noticeDate"></div><div><label>গুরুত্ব</label><select id="noticePriority"><option>সাধারণ</option><option>গুরুত্বপূর্ণ</option><option>জরুরি</option></select></div></div><button id="addNotice">হোমপেজে নোটিশ প্রকাশ</button></div>
+   <div class="card"><h3>📌 প্রকাশিত নোটিশ</h3><div id="noticeList"></div></div>
+  </section>
+
+  <section class="page" id="page-plans">
+   <div class="card"><h3>🎯 লক্ষ্য ও টু-ডু লিস্ট</h3><label>কাজ / লক্ষ্য</label><input id="planTitle" placeholder="যেমন: ইংরেজি Unit 3 শেষ করব"><div class="two"><div><label>শেষ তারিখ</label><input type="date" id="planDue"></div><div><label>ধরন</label><select id="planType"><option>দৈনিক</option><option>সাপ্তাহিক</option><option>মাসিক</option><option>পরীক্ষার প্রস্তুতি</option><option>ব্যক্তিগত</option></select></div></div><button id="addPlan">লক্ষ্য যোগ করো</button></div>
+   <div class="card"><h3>✅ আমার পরিকল্পনা</h3><div id="planList"></div></div>
+  </section>
+
+  <section class="page" id="page-tools">
+   <div class="card"><h3>🧮 সাধারণ ক্যালকুলেটর</h3><input id="calcDisplay" placeholder="যেমন: (25+15)*2" inputmode="decimal"><div class="actions"><button id="calculate">হিসাব করো</button><button class="secondary" id="calcClear">মুছো</button></div><p id="calcResult"></p><p class="muted">শুধু সংখ্যা ও সাধারণ + − × ÷ বন্ধনী ব্যবহার করো।</p></div>
+   <div class="card"><h3>📐 গণিতের গুরুত্বপূর্ণ সূত্র</h3><div id="formulaList"></div><label>নতুন সূত্র যোগ করো</label><input id="formulaTitle" placeholder="সূত্রের নাম"><textarea id="formulaBody" placeholder="সূত্র লিখো"></textarea><button id="addFormula">সূত্র সংরক্ষণ</button></div>
+   <div class="card"><h3>📘 ইংরেজি শেখার সহায়ক</h3><div class="quote"><b>Daily practice:</b> ৫টি নতুন শব্দ, ৫টি বাক্য, ১টি Grammar topic এবং ১০ মিনিট Reading.</div><div class="list" id="englishResources"></div></div>
+  </section>
+
+  <section class="page" id="page-statement">
+   <div class="card"><h3>📊 পড়াশোনার স্টেটমেন্ট</h3><div class="two"><div><label>শুরুর তারিখ</label><input type="date" id="fromDate"></div><div><label>শেষের তারিখ</label><input type="date" id="toDate"></div></div><div class="actions no-print"><button id="makeStatement">স্টেটমেন্ট তৈরি</button><button class="gold" id="printStatement">PDF / প্রিন্ট ডাউনলোড</button></div><div id="statementResult"></div></div>
+   <div class="card"><h3>📈 মোট পরিসংখ্যান</h3><div class="grid"><div class="stat"><small>মোট পড়া</small><strong id="allStudy">০</strong></div><div class="stat"><small>মোট রেকর্ড</small><strong id="allSessions">০</strong></div><div class="stat"><small>শিক্ষকের কাজ</small><strong id="allTeacher">০</strong></div><div class="stat"><small>সম্পন্ন নোট</small><strong id="allNotes">০</strong></div></div></div>
+  </section>
+
+  <section class="page" id="page-settings">
+   <div class="card"><h3>👤 ব্যক্তিগত প্রোফাইল</h3><label>তোমার নাম</label><input id="profileName" placeholder="পূর্ণ নাম"><div class="two"><div><label>Gmail</label><input id="profileEmail" type="email" placeholder="your@gmail.com"></div><div><label>মোবাইল</label><input id="profilePhone" placeholder="01XXXXXXXXX"></div></div><label>ঠিকানা</label><textarea id="profileAddress" placeholder="গ্রাম, ইউনিয়ন, উপজেলা, জেলা"></textarea><label>নিজের ওয়েবসাইট</label><input id="profileWebsite" type="url" placeholder="https://..."><label>প্রোফাইল ছবি</label><input id="profilePhoto" type="file" accept="image/*"><img id="profilePreview" class="thumb hidden"><button id="saveProfile">প্রোফাইল সংরক্ষণ</button></div>
+   <div class="card"><h3>⚙️ অ্যাপ সেটিংস</h3><label>ভাষা / Language</label><select id="language"><option value="bn">বাংলা</option><option value="en">English</option></select><label>দৈনিক পড়ার লক্ষ্য (ঘণ্টা)</label><input type="number" id="dailyGoal" min="1" max="16" value="6"><label>রঙের ধরন</label><select id="themeSelect"><option value="light">Light Mode</option><option value="dark">Dark Mode</option></select><button id="saveSettings">সেটিংস সংরক্ষণ</button></div>
+   <div class="card"><h3>💾 ডেটা ব্যাকআপ ও নিরাপত্তা</h3><p class="muted">এই সংস্করণে তথ্য তোমার বর্তমান ব্রাউজার ও ডিভাইসে থাকে। অন্য ডিভাইসে নিজে থেকে যাবে না। Gmail-এ স্বয়ংক্রিয় লগইন, ক্লাউড সিঙ্ক বা সার্ভার ব্যাকএন্ড এখনো যুক্ত নেই। ব্যক্তিগত তথ্য দেওয়ার আগে এই সীমাবদ্ধতা বুঝে নেবে।</p><div class="actions"><button id="exportData">সব ডেটা ব্যাকআপ</button><label class="filelabel">ব্যাকআপ ফিরিয়ে আনো<input type="file" id="importData" accept=".json" hidden></label><button class="danger" id="resetData">সব ডেটা মুছে ফেলো</button></div></div>
+  </section>
+  <footer class="footer">SALMAN'S STUDY HUB • DAKHIL 2027<br>Created for Salman Farshi • <span id="footerSite">salmanfarshi1630.github.io</span></footer>
+ </main>
+</div>
+</div>
+<script>
+const $=id=>document.getElementById(id),today=()=>new Date().toLocaleDateString('en-CA');
+const defaults=['কুরআন মাজিদ','হাদিস শরিফ','আকাইদ ও ফিকহ','আরবি ১ম পত্র','আরবি ২য় পত্র','বাংলা ১ম পত্র','বাংলা ২য় পত্র','ইংরেজি ১ম পত্র','ইংরেজি ২য় পত্র','গণিত','তথ্য ও যোগাযোগ প্রযুক্তি','বিজ্ঞান','বাংলাদেশ ও বিশ্বপরিচয়','ঐচ্ছিক / অন্যান্য'];
+const starter={subjects:defaults,studies:[],others:[],teachers:[],notes:[],books:[],links:[],notices:[],plans:[],routines:[],formulas:[],profile:{name:'Salman Farshi',website:'https://salmanfarshi1630.github.io'},settings:{goal:6,theme:'light',language:'bn'}};
+let db=load();
+function load(){try{return {...structuredClone(starter),...JSON.parse(localStorage.getItem('salmanStudyHub')||'{}')}}catch(e){return structuredClone(starter)}}
+function save(){try{localStorage.setItem('salmanStudyHub',JSON.stringify(db));}catch(e){alert('সংরক্ষণে সমস্যা হয়েছে। ছবির আকার ছোট করো অথবা ডেটা ব্যাকআপ নাও।')}}
+function esc(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function mins(a,b){if(!a||!b)return 0;let [h,m]=a.split(':').map(Number),[x,y]=b.split(':').map(Number),n=x*60+y-h*60-m;return n<0?n+1440:n}
+function dur(n){return Math.floor(n/60)+' ঘণ্টা '+(n%60)+' মিনিট'}
+function dateSet(){['studyDate','otherDate','teacherDate','noticeDate','routineDay','planDue'].forEach(id=>{if($(id)&&$(id).type==='date'&&!$(id).value)$(id).value=today()});}
+function options(){['quickSubject','studySubject','teacherSubject','noteSubject','bookSubject','linkSubject'].forEach(id=>{let e=$(id);if(e)e.innerHTML=db.subjects.map(s=>`<option>${esc(s)}</option>`).join('')})}
+function nav(){document.querySelectorAll('#nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('#nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));$('page-'+b.dataset.page).classList.add('active');$('pageTitle').textContent=b.textContent.trim();$('sidebar').classList.remove('open');render()})}
+function addList(arr,obj){arr.unshift({...obj,id:Date.now()+Math.random()});save();render()}
+function removeItem(key,id){if(!confirm('এই তথ্যটি মুছে ফেলতে চাও?'))return;db[key]=db[key].filter(x=>x.id!==id);save();render()}
+function editItem(key,id,fields){let x=db[key].find(v=>v.id===id);if(!x)return;let val=prompt('নতুন লেখা লিখো:',x[fields]);if(val===null)return;x[fields]=val;save();render()}
+function cardList(arr,key,fn){return arr.length?arr.map(fn).join(''):'<div class="empty">এখনো কোনো তথ্য যোগ করা হয়নি।</div>'}
+function recordCard(x,key,title,sub,detail){return `<div class="item"><b>${esc(title)}</b><small>${esc(sub||'')}</small><p>${esc(detail||'')}</p><div class="actions"><button class="secondary" onclick="editItem('${key}',${x.id},'${key==='studies'?'detail':key==='teachers'?'task':key==='notes'?'body':key==='notices'?'body':key==='plans'?'title':key==='books'?'name':key==='links'?'name':'title'}')">সম্পাদনা</button><button class="danger" onclick="removeItem('${key}',${x.id})">মুছুন</button></div></div>`}
+function dayStats(d){let s=db.studies.filter(x=>x.date===d).reduce((a,x)=>a+x.minutes,0),o=db.others.filter(x=>x.date===d).reduce((a,x)=>a+x.minutes,0);return{s,o}}
+function renderHome(){let d=today(),t=dayStats(d),goal=db.settings.goal*60,p=Math.min(100,Math.round(t.s/goal*100));$('homeStudy').textContent=dur(t.s);$('homeOther').textContent=dur(t.o);$('homeGoal').textContent=db.settings.goal+' ঘণ্টা';$('homePercent').textContent=p+'%';$('homeNotices').innerHTML=cardList(db.notices.slice(0,4),'notices',n=>`<div class="notice"><b>${esc(n.title)} <span class="pill">${esc(n.priority)}</span></b><p>${esc(n.body)}</p><small>${esc(n.date)}</small></div>`);$('homeTasks').innerHTML=cardList(db.plans.filter(x=>!x.done).slice(0,5),'plans',x=>`<div class="item">▫️ ${esc(x.title)} <small>${esc(x.due||'')}</small></div>`)}
+function renderSubjects(){$('subjectEditor').innerHTML=db.subjects.map((s,i)=>`<div class="subjectrow"><input data-sub="${i}" value="${esc(s)}"><span class="muted">বিষয় ${i+1}</span></div>`).join('')}
+function renderRoutine(){$('routineList').innerHTML=cardList(db.routines,'routines',x=>`<div class="item"><b>${esc(x.day)} • ${esc(x.time)}</b>${esc(x.subject)}<div class="actions"><button class="secondary" onclick="editItem('routines',${x.id},'subject')">সম্পাদনা</button><button class="danger" onclick="removeItem('routines',${x.id})">মুছুন</button></div></div>`)}
+function renderLogs(){$('studyList').innerHTML=cardList(db.studies.filter(x=>x.date===today()),'studies',x=>recordCard(x,'studies',x.subject+' • '+dur(x.minutes),x.date+' | '+x.start+'–'+x.end,x.detail+' | '+x.level));$('otherList').innerHTML=cardList(db.others.filter(x=>x.date===today()),'others',x=>recordCard(x,'others',x.type+' • '+dur(x.minutes),x.date+' | '+x.start+'–'+x.end,x.detail))}
+function renderTeachers(){$('teacherList').innerHTML=cardList(db.teachers,'teachers',x=>`<div class="item"><b>${esc(x.teacher)} • ${esc(x.subject)}</b><p>${esc(x.task)}</p><small>দেওয়া: ${esc(x.date)} | জমা: ${esc(x.due||'নির্ধারিত নয়')} | ${esc(x.status)}</small><div class="actions"><button class="secondary" onclick="editItem('teachers',${x.id},'task')">পড়া সম্পাদনা</button><button class="secondary" onclick="changeStatus(${x.id})">অবস্থা বদল</button><button class="danger" onclick="removeItem('teachers',${x.id})">মুছুন</button></div></div>`)}
+function changeStatus(id){let x=db.teachers.find(x=>x.id===id);if(x){x.status=x.status==='সম্পন্ন'?'বাকি':x.status==='বাকি'?'চলমান':'সম্পন্ন';save();render()}}
+function renderNotes(){$('noteList').innerHTML=cardList(db.notes,'notes',x=>`<div class="item"><b>${esc(x.title)} <span class="pill">${esc(x.subject)}</span></b><p>${esc(x.body)}</p>${x.image?`<img class="thumb" src="${x.image}">`:''}<div class="actions"><button class="secondary" onclick="editItem('notes',${x.id},'body')">নোট সম্পাদনা</button><button class="danger" onclick="removeItem('notes',${x.id})">মুছুন</button></div></div>`)}
+function renderBooks(){$('bookList').innerHTML=cardList(db.books,'books',x=>`<div class="resource"><div><b>${esc(x.name)}</b><small>${esc(x.author)} • ${esc(x.subject)}<br>${esc(x.desc)}</small></div><div class="actions"><button onclick="openSafe('${esc(x.url)}')">বই খুলুন</button><button class="secondary" onclick="editItem('books',${x.id},'name')">নাম বদল</button><button class="danger" onclick="removeItem('books',${x.id})">মুছুন</button></div></div>`)}
+function openSafe(url){try{let u=new URL(url);if(!['https:','http:'].includes(u.protocol))throw 0;window.open(u.href,'_blank','noopener,noreferrer')}catch(e){alert('সঠিক http/https লিংক দাও')}}
+function renderLinks(){$('linkList').innerHTML=cardList(db.links,'links',x=>`<div class="resource"><div><b>${esc(x.name)}</b><small>${esc(x.type)} • ${esc(x.subject)}<br>${esc(x.desc)}</small></div><div class="actions"><button onclick="openSafe('${esc(x.url)}')">খুলুন</button><button class="secondary" onclick="editItem('links',${x.id},'name')">নাম বদল</button><button class="danger" onclick="removeItem('links',${x.id})">মুছুন</button></div></div>`)}
+function renderNotices(){$('noticeList').innerHTML=cardList(db.notices,'notices',x=>`<div class="notice"><b>${esc(x.title)} • ${esc(x.priority)}</b><p>${esc(x.body)}</p><small>${esc(x.date)}</small><div class="actions"><button class="secondary" onclick="editItem('notices',${x.id},'body')">বিবরণ সম্পাদনা</button><button class="danger" onclick="removeItem('notices',${x.id})">মুছুন</button></div></div>`)}
+function renderPlans(){$('planList').innerHTML=cardList(db.plans,'plans',x=>`<div class="item"><label><input type="checkbox" style="width:auto" ${x.done?'checked':''} onchange="togglePlan(${x.id})"> ${esc(x.title)}</label><small>${esc(x.type)} • ${esc(x.due||'তারিখ নেই')}</small><button class="danger" onclick="removeItem('plans',${x.id})">মুছুন</button></div>`)}
+function togglePlan(id){let x=db.plans.find(x=>x.id===id);x.done=!x.done;save();render()}
+const starterLinks=[['10 Minute School','https://10minuteschool.com/'],['BBC Learning English','https://www.bbc.co.uk/learningenglish'],['British Council LearnEnglish','https://learnenglish.britishcouncil.org/'],['Khan Academy','https://www.khanacademy.org/']];
+function renderResources(){let h=starterLinks.map(x=>`<div class="resource"><div><b>${x[0]}</b><small>শিক্ষামূলক ওয়েবসাইট</small></div><button onclick="openSafe('${x[1]}')">ওয়েবসাইট খুলুন</button></div>`).join('');$('starterResources').innerHTML=h;$('englishResources').innerHTML=h}
+function renderFormulas(){$('formulaList').innerHTML=cardList(db.formulas,'formulas',x=>`<div class="item"><b>${esc(x.title)}</b><p>${esc(x.body)}</p><button class="secondary" onclick="editItem('formulas',${x.id},'body')">সম্পাদনা</button><button class="danger" onclick="removeItem('formulas',${x.id})">মুছুন</button></div>`)}
+function renderStatement(){let from=$('fromDate').value||today(),to=$('toDate').value||today(),arr=db.studies.filter(x=>x.date>=from&&x.date<=to),other=db.others.filter(x=>x.date>=from&&x.date<=to),sum=arr.reduce((a,x)=>a+x.minutes,0),os=other.reduce((a,x)=>a+x.minutes,0);$('statementResult').innerHTML=`<h3>${esc(db.profile.name||'শিক্ষার্থী')} • ${from} থেকে ${to}</h3><p>মোট পড়াশোনা: <b>${dur(sum)}</b></p><p>অন্য কাজে রেকর্ড: <b>${dur(os)}</b></p><p>মোট পড়ার সেশন: <b>${arr.length}</b></p><div class="tablewrap"><table><tr><th>তারিখ</th><th>বিষয়</th><th>সময়</th><th>বিবরণ</th></tr>${arr.map(x=>`<tr><td>${esc(x.date)}</td><td>${esc(x.subject)}</td><td>${dur(x.minutes)}</td><td>${esc(x.detail)}</td></tr>`).join('')}</table></div>`}
+function renderStats(){$('allStudy').textContent=dur(db.studies.reduce((a,x)=>a+x.minutes,0));$('allSessions').textContent=db.studies.length;$('allTeacher').textContent=db.teachers.length;$('allNotes').textContent=db.notes.length}
+function render(){options();renderHome();renderSubjects();renderRoutine();renderLogs();renderTeachers();renderNotes();renderBooks();renderLinks();renderNotices();renderPlans();renderResources();renderFormulas();renderStats()}
+function bind(id,fn){$(id).addEventListener('click',fn)}
+bind('hamb',()=>$('sidebar').classList.toggle('open'));
+$('themeBtn').onclick=()=>{db.settings.theme=db.settings.theme==='dark'?'light':'dark';save();applyTheme()};
+$('langBtn').onclick=()=>{db.settings.language=db.settings.language==='bn'?'en':'bn';save();$('langBtn').textContent=db.settings.language==='bn'?'EN':'বাংলা';alert(db.settings.language==='en'?'Language preference saved. Some study content remains in Bangla.':'ভাষা পছন্দ সংরক্ষিত হয়েছে। কিছু শিক্ষামূলক লেখা বাংলায় থাকবে।')};
+function applyTheme(){document.documentElement.dataset.theme=db.settings.theme;$('themeSelect').value=db.settings.theme;$('themeBtn').textContent=db.settings.theme==='dark'?'☀️':'🌙'}
+bind('saveSubjects',()=>{db.subjects=[...document.querySelectorAll('[data-sub]')].map(x=>x.value.trim()||'অন্যান্য');save();options();alert('বিষয় সংরক্ষিত হয়েছে')});
+bind('addRoutine',()=>{if(!$('routineTime').value||!$('routineSubject').value)return alert('সময় ও বিষয় লিখো');addList(db.routines,{day:$('routineDay').value,time:$('routineTime').value,subject:$('routineSubject').value});$('routineSubject').value=''});
+bind('addStudy',()=>{let n=mins($('studyStart').value,$('studyEnd').value);if(!n)return alert('সঠিক শুরু ও শেষের সময় দাও');addList(db.studies,{date:$('studyDate').value,subject:$('studySubject').value,start:$('studyStart').value,end:$('studyEnd').value,minutes:n,detail:$('studyDetail').value,level:$('studyLevel').value});$('studyDetail').value=''});
+bind('addOther',()=>{let n=mins($('otherStart').value,$('otherEnd').value);if(!n)return alert('সঠিক সময় দাও');addList(db.others,{date:$('otherDate').value,type:$('otherType').value,start:$('otherStart').value,end:$('otherEnd').value,minutes:n,detail:$('otherDetail').value});$('otherDetail').value=''});
+bind('quickAdd',()=>{let n=Number($('quickMinutes').value);if(!n||n<1)return alert('মিনিট লিখো');addList(db.studies,{date:today(),subject:$('quickSubject').value,start:'',end:'',minutes:n,detail:$('quickDetail').value,level:'দ্রুত রেকর্ড'});$('quickDetail').value=''});
+bind('addTeacher',()=>{if(!$('teacherName').value||!$('teacherTask').value)return alert('শিক্ষকের নাম ও পড়া লিখো');addList(db.teachers,{teacher:$('teacherName').value,subject:$('teacherSubject').value,date:$('teacherDate').value,task:$('teacherTask').value,due:$('teacherDue').value,status:$('teacherStatus').value});$('teacherTask').value=''});
+let pendingImage='';
+$('noteImage').onchange=e=>{let f=e.target.files[0];if(!f)return;if(f.size>1200000)return alert('ছবিটি ১.২ MB-এর কম রাখো');let r=new FileReader();r.onload=()=>{pendingImage=r.result;$('imagePreview').innerHTML=`<img class="thumb" src="${pendingImage}">`};r.readAsDataURL(f)};
+bind('addNote',()=>{if(!$('noteTitle').value)return alert('নোটের শিরোনাম লিখো');addList(db.notes,{title:$('noteTitle').value,subject:$('noteSubject').value,body:$('noteBody').value,image:pendingImage});$('noteTitle').value='';$('noteBody').value='';pendingImage='';$('imagePreview').innerHTML=''});
+bind('addBook',()=>{if(!$('bookName').value||!$('bookUrl').value)return alert('বইয়ের নাম ও লিংক লিখো');addList(db.books,{name:$('bookName').value,author:$('bookAuthor').value,subject:$('bookSubject').value,url:$('bookUrl').value,desc:$('bookDesc').value})});
+bind('addLink',()=>{if(!$('linkName').value||!$('linkUrl').value)return alert('নাম ও লিংক লিখো');addList(db.links,{name:$('linkName').value,type:$('linkType').value,subject:$('linkSubject').value,url:$('linkUrl').value,desc:$('linkDesc').value})});
+bind('addNotice',()=>{if(!$('noticeTitle').value||!$('noticeBody').value)return alert('নোটিশের শিরোনাম ও বিবরণ লিখো');addList(db.notices,{title:$('noticeTitle').value,body:$('noticeBody').value,date:$('noticeDate').value,priority:$('noticePriority').value})});
+bind('addPlan',()=>{if(!$('planTitle').value)return alert('লক্ষ্য লিখো');addList(db.plans,{title:$('planTitle').value,due:$('planDue').value,type:$('planType').value,done:false});$('planTitle').value=''});
+bind('calculate',()=>{let s=$('calcDisplay').value;if(!/^[0-9+\-*/(). %]+$/.test(s))return $('calcResult').textContent='শুধু সাধারণ গাণিতিক চিহ্ন ব্যবহার করো';try{let v=Function('"use strict";return ('+s+')')();$('calcResult').textContent='ফলাফল: '+v}catch(e){$('calcResult').textContent='হিসাবটি সঠিক নয়'}});
+bind('calcClear',()=>{$('calcDisplay').value='';$('calcResult').textContent=''});
+bind('addFormula',()=>{if(!$('formulaTitle').value||!$('formulaBody').value)return alert('সূত্রের নাম ও বিবরণ লিখো');addList(db.formulas,{title:$('formulaTitle').value,body:$('formulaBody').value})});
+bind('makeStatement',renderStatement);bind('printStatement',()=>{renderStatement();window.print()});
+$('profilePhoto').onchange=e=>{let f=e.target.files[0];if(!f)return;if(f.size>1500000)return alert('ছবি ১.৫ MB-এর কম রাখো');let r=new FileReader();r.onload=()=>{db.profile.photo=r.result;save();$('profilePreview').src=r.result;$('profilePreview').classList.remove('hidden')};r.readAsDataURL(f)};
+bind('saveProfile',()=>{db.profile={...db.profile,name:$('profileName').value,email:$('profileEmail').value,phone:$('profilePhone').value,address:$('profileAddress').value,website:$('profileWebsite').value};save();$('welcome').textContent='আসসালামু আলাইকুম, '+(db.profile.name||'শিক্ষার্থী')+'!';$('footerSite').textContent=db.profile.website||'নিজের ওয়েবসাইট';alert('প্রোফাইল সংরক্ষিত হয়েছে')});
+bind('saveSettings',()=>{db.settings.goal=Math.max(1,Number($('dailyGoal').value)||6);db.settings.theme=$('themeSelect').value;db.settings.language=$('language').value;save();applyTheme();render();alert('সেটিংস সংরক্ষিত হয়েছে')});
+bind('exportData',()=>download(JSON.stringify(db,null,2),'Salman-StudyHub-Backup.json','application/json'));
+function download(data,name,type){let a=document.createElement('a'),u=URL.createObjectURL(new Blob([data],{type}));a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+$('importData').onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result);if(!x.subjects||!x.studies)throw 0;db={...structuredClone(starter),...x};save();loadProfile();render();alert('ব্যাকআপ ফিরিয়ে আনা হয়েছে')}catch(err){alert('ব্যাকআপ ফাইলটি সঠিক নয়')}};r.readAsText(f)};
+bind('resetData',()=>{if(!confirm('সব ডেটা মুছে ফেলবে? আগে ব্যাকআপ নিয়েছ?'))return;if(!confirm('শেষবার নিশ্চিত হও।'))return;localStorage.removeItem('salmanStudyHub');db=structuredClone(starter);loadProfile();render();alert('ডেটা রিসেট হয়েছে')});
+function loadProfile(){let p=db.profile||{};['Name','Email','Phone','Address','Website'].forEach(k=>{let id='profile'+k;if($(id))$(id).value=p[k.toLowerCase()]||''});$('dailyGoal').value=db.settings.goal;$('language').value=db.settings.language;$('profilePreview').src=p.photo||'';$('profilePreview').classList.toggle('hidden',!p.photo);applyTheme();$('welcome').textContent='আসসালামু আলাইকুম, '+(p.name||'সালমান')+'!';$('footerSite').textContent=p.website||'salmanfarshi1630.github.io'}
+function tick(){let d=new Date();$('clock').textContent=d.toLocaleTimeString('bn-BD');$('todayText').textContent=d.toLocaleDateString('bn-BD',{weekday:'long',year:'numeric',month:'long',day:'numeric'});$('heroDate').textContent=d.toLocaleDateString('bn-BD')}
+nav();dateSet();['studyDate','otherDate','teacherDate','noticeDate'].forEach(id=>$(id).value=today());$('fromDate').value=today();$('toDate').value=today();loadProfile();render();tick();setInterval(tick,1000);
+</script>
+</body>
+</html>
